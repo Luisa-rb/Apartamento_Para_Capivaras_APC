@@ -84,6 +84,7 @@ int main() {
 
     camisetas info_cliente[200];
     int qtd_clientes, i, j, k;
+    count = 1;
 
     while(1) {
 
@@ -93,6 +94,12 @@ int main() {
 
             break;
         }
+
+        if (count == 0) { 
+            printf("\n");
+        }
+
+        count = 0;
 
         for(k = 0; k < qtd_clientes; k++) {
 
@@ -121,13 +128,9 @@ int main() {
         for (k = 0; k < qtd_clientes; k++) {
 
             printf("%s %c %s\n", info_cliente[k].cor, info_cliente[k].tam, info_cliente[k].nome);
-
+            
         }
-
-        printf("\n");
-
-
     }
-
+    
     return 0;
 }
