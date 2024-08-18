@@ -2,9 +2,9 @@
 #include <string.h>
 
 struct Camisetas {
-    char cor[9];  // Cor pode ter até 8 caracteres (VERMELHO + \0) + 1 terminador nulo
+    char cor[9];  // Cor pode ter até 8 caracteres (VERMELHO + \0)
     char tam;
-    char nome[101];  // Nome pode ter até 100 caracteres + 1 terminador nulo
+    char nome[101];  // Nome pode ter até 100 caracteres + \0
 };
 
 typedef struct Camisetas camisetas;
@@ -37,7 +37,7 @@ void ordena_cor (camisetas info_cliente[200], int qtd_clientes) {
     for(i = 0; i < qtd_clientes - 1; i++) {
         for(j = i + 1; j < qtd_clientes; j++) {
 
-            // 0 para verificar se a cor e "vermelho" ou "branco" sao iguais à info_cliente.cor
+            // 0 para verificar se a cor "vermelho" ou "branco" sao iguais à info_cliente.cor
             if(strcmp(info_cliente[i].cor, "vermelho") == 0 && strcmp(info_cliente[j].cor, "branco") == 0) { 
 
                 troca(info_cliente, i, j); 
