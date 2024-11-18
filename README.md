@@ -1,4 +1,4 @@
-# Apartamento_Para_Capivaras_APC
-Exercícios do beecrowd judge em linguagem c
+# Algoritmos_e_Programação_de_Computadores_APC
 
-Disciplina: Algoritmos e Programação de Computadores
+Exercícios do beecrowd judge em linguagem c
+Disciplina 1º semestre
